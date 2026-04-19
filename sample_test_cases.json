@@ -1,0 +1,122 @@
+[
+    {
+        "name": "1. Normal safe transaction",
+        "input": {
+            "device_trust": 0,
+            "velocity_seconds": 120,
+            "amount": 5000,
+            "retries": 0,
+            "aa_context": {
+                "historical_avg_amount": 8000,
+                "large_withdrawal_from_goal": 0,
+                "income_stability": 0.95,
+                "net_worth": 2500000
+            }
+        }
+    },
+    {
+        "name": "2. New device + very large amount (High risk)",
+        "input": {
+            "device_trust": 30,
+            "velocity_seconds": 15,
+            "amount": 850000,
+            "retries": 1,
+            "aa_context": {
+                "historical_avg_amount": 12000,
+                "large_withdrawal_from_goal": 1,
+                "income_stability": 0.8,
+                "net_worth": 1800000
+            }
+        }
+    },
+    {
+        "name": "3. Fast action after login (Timelock expected)",
+        "input": {
+            "device_trust": 0,
+            "velocity_seconds": 8,
+            "amount": 150000,
+            "retries": 0,
+            "aa_context": {
+                "historical_avg_amount": 80000,
+                "large_withdrawal_from_goal": 0,
+                "income_stability": 0.9,
+                "net_worth": 3200000
+            }
+        }
+    },
+    {
+        "name": "4. Multiple OTP retries",
+        "input": {
+            "device_trust": 0,
+            "velocity_seconds": 45,
+            "amount": 25000,
+            "retries": 4,
+            "aa_context": {
+                "historical_avg_amount": 18000,
+                "large_withdrawal_from_goal": 0,
+                "income_stability": 0.85,
+                "net_worth": 1400000
+            }
+        }
+    },
+    {
+        "name": "5. Safe recurring SIP (should be Allow)",
+        "input": {
+            "device_trust": 0,
+            "velocity_seconds": 180,
+            "amount": 12000,
+            "retries": 0,
+            "aa_context": {
+                "historical_avg_amount": 12000,
+                "large_withdrawal_from_goal": 0,
+                "income_stability": 0.95,
+                "net_worth": 4500000
+            }
+        }
+    },
+    {
+        "name": "6. Withdrawal against goal (Medium-High risk)",
+        "input": {
+            "device_trust": 0,
+            "velocity_seconds": 90,
+            "amount": 300000,
+            "retries": 2,
+            "aa_context": {
+                "historical_avg_amount": 45000,
+                "large_withdrawal_from_goal": 1,
+                "income_stability": 0.7,
+                "net_worth": 2200000
+            }
+        }
+    },
+    {
+        "name": "7. Trusted device but huge amount spike",
+        "input": {
+            "device_trust": 0,
+            "velocity_seconds": 300,
+            "amount": 1200000,
+            "retries": 0,
+            "aa_context": {
+                "historical_avg_amount": 80000,
+                "large_withdrawal_from_goal": 0,
+                "income_stability": 0.92,
+                "net_worth": 3800000
+            }
+        }
+    },
+    {
+        "name": "8. Very safe small transfer",
+        "input": {
+            "device_trust": 0,
+            "velocity_seconds": 600,
+            "amount": 2000,
+            "retries": 0,
+            "aa_context": {
+                "historical_avg_amount": 15000,
+                "large_withdrawal_from_goal": 0,
+                "income_stability": 0.98,
+                "net_worth": 5000000
+            }
+        }
+    }
+]
