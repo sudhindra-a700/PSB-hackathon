@@ -63,4 +63,4 @@ Fully aligned with the official PSBs Hackathon problem statement and the origina
 
 - Ollama Integration (optional): Replace or augment the current explanation system with a local LLM (llama3.2:1b or phi3) for more natural, conversational explanations
 - Real Account Aggregator sandbox integration (Setu / FinVu / FinVu)
-- '/portfolio-health' endpoint for monthly summaries and drift alerts
+- `/portfolio-health` endpoint for monthly summaries and drift alerts
